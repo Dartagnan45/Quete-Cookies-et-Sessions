@@ -4,8 +4,8 @@ if (isset($_SESSION['login'])) {
     header("Location: index.php");
 }
 
-if (isset($_POST['login'])) {
-    $_SESSION['login'] = ($_POST['login']);
+if (isset($_POST['name'])) {
+    $_SESSION['login'] = ($_POST['name']);
     header("Location: index.php");
 }
 
@@ -35,7 +35,7 @@ if (isset($_POST['login'])) {
                     <span class="input-group-addon">
                       <i class="glyphicon glyphicon-user"></i>
                     </span>
-                                            <input class="form-control" placeholder="Username" name="login"
+                                            <input class="form-control" placeholder="Username" name="name"
                                                    type="text" autofocus>
                                         </div>
                                     </div>
